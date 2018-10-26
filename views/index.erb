@@ -1,14 +1,15 @@
-<h1>Esta es la aplicación de los perros<h1>
+<h1>🐕 Esta es la aplicación de los perros 🐩<h1>
+
+<img src="http://0.media.collegehumor.cvcdn.com/85/39/a60eae888b6eed5a561df1c559b5016a.jpg"/>
 
 <form action="/dogs" method="post">
-    <input type="text" name="dog">
-    <input type="button" value="Crear Perro">
+    <input type="text" name="dog"/>
+    <input type="submit" value="Crear Perro"/>
 </form>
 
-<p><%= @dogs %></p>
 
 <ul>
 <% @dogs.each do |pet| %>
-<li><%= pet %></li>
+<p>🐶 <%= pet %> 🐶</p>
 <%end%>
 </ul>
