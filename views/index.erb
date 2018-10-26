@@ -1,0 +1,14 @@
+<h1>Esta es la aplicación de los perros<h1>
+
+<form action="/dogs" method="post">
+    <input type="text" name="dog">
+    <input type="button" value="Crear Perro">
+</form>
+
+<p><%= @dogs %></p>
+
+<ul>
+<% @dogs.each do |pet| %>
+<li><%= pet %></li>
+<%end%>
+</ul>
